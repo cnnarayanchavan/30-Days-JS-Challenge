@@ -9,3 +9,4 @@ Revised JS from basic to advance in 30 days from chaicode.com  #HiteshChoudhary
 * Loops✅
 * Functions✅
 * Arrays & Array Methods✅
+* Methods & Methods✅
