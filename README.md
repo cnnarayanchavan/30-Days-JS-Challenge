@@ -11,3 +11,6 @@ Revised JS from basic to advance in 30 days from chaicode.com  #HiteshChoudhary
 * Arrays & Array Methods✅
 * Methods & Methods✅
 * ES6 Features✅
+* DOM Manipulation✅
+* Events Handeling✅
+  
