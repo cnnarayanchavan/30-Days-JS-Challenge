@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouseover Event</title>
+</head>
+<style>
+    body{
+        background-color: #212121;
+        color: whitesmoke;
+    }
+    h1{
+        text-align: center;
+        border: 2px solid;
+        margin-top: 200px;
+        padding: 20px;
+        border-radius: 20px;
+        /* border-color: blueviolet; */
+    }
+</style>
+<body>
+    <h1 class="mainheading">Narayana..Narayana..</h1>
+</body>
+
+<script>
+
+    //add an mouseover event listener that change it's border color
+    const h1 = document.querySelector('h1')
+    h1.addEventListener('mouseover',function(){
+        h1.style.borderColor='red'
+    })
+
+
+
+    h1.addEventListener('mouseout',function(){
+        h1.style.borderColor = 'green'
+    })    
+
+
+</script>
+</html>
