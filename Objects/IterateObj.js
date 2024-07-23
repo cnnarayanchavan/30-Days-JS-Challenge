@@ -1,5 +1,3 @@
-let tile = "ABC"
-let author = "XYZ"
 const booksInfo = {
     "tile" : "The Rock",
     "author" : "KR Gogi",
@@ -25,10 +23,12 @@ const booksInfo = {
         "books" : ["Mahabharata","Ramayana","ShivMahapuran","Ravanpuran"],
         "author" : ["kk gogi", "harish kk", "joda D", "valmikktio p"]
     }
-}   
+}
 
-//console.log(booksInfo.library.book1.name);
-const ans = booksInfo.library2.books
-ans.forEach( (ele)=>{
-    console.log(ele);
-} )
+
+for(const key in booksInfo){
+    console.log(`${key} -> ${booksInfo[key]}`);
+}
+
+
+console.log(booksInfo.Object.keys);
