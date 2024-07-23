@@ -1,0 +1,34 @@
+<!-- create li element and add it to the existing ul element  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM_Create_Element_2</title>
+</head>
+<body style="background: #212121; color: #fff;">
+
+    <div class="maindiv" style="text-align: center;">
+        <ul class="mainlist">
+            <li class="lists">Monday</li>
+            <li class="lists">Tuesday</li>
+            <li class="lists">Wednesday</li>
+            <li class="lists">Thusday</li>
+            <li class="lists">Friday</li>
+        </ul>
+    </div>
+
+</body>
+<script>
+    const seletList = document.querySelector('.mainlist');
+    const li = document.createElement('li');
+    //li.innerText = 'Satuarday'  //it will travelse whole tree so not optimised
+    const addText = document.createTextNode('Satuarday');
+    li.append(addText)
+    seletList.append(li)
+
+
+
+</script>
+</html>

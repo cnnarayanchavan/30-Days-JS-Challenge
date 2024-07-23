@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Create element</title>
+</head>
+<body>
+    //empty body here we have to add div element 
+
+</body>
+<script>
+    const addDiv = document.createElement('div');
+    console.log(addDiv);
+    addDiv.className = 'mainDiv';
+    addDiv.id = 'mainDiv';
+    addDiv.setAttribute('title' , 'Main Division Tag');
+    // addDiv.innerHTML='<span> Hello Therer!! </span>'
+    addDiv.style.backgroundColor='Green';
+    addDiv.style.paddin= '19px';
+    addDiv.style.textAlign = 'center'
+    const addText = document.createTextNode('This is teh text node');
+    addDiv.appendChild(addText);
+    document.body.appendChild(addDiv)
+    
+</script>
+</html>

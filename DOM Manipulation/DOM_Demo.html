@@ -1,0 +1,39 @@
+<!-- select html element by it's id and and change it's text content -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEMO_DOM</title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h1 class="mainh" style="text-align: center; color: rebeccapurple; background-color: aqua;" >DOM Maniplation</h1>
+    <br/><hr/>
+    <p id="mainp">
+        This is para to be changed 
+    </p>
+    <button id="btn">ClickMeToChange</button>
+
+    <br/><hr/>
+    <p><span>Lorem ipsum, dolor sit amet consectetur adipisicing e.</span></p>
+
+    <script>
+
+        //1] // select html element by it's id and   and change it's text content
+        const id = document.getElementById('mainp');
+        const btn = document.getElementById('btn');
+        const changeContent = btn.addEventListener('click',function(){
+            id.innerText="changed the text";
+        })
+        // console.log(changeContent);
+
+
+        //2]  select html element by it's class and and change it's background color
+        const classEle = document.getElementsByClassName('mainh')
+        console.log(classEle);
+        const changeColor = classEle[0].style.backgroundColor = "pink";
+
+    </script>
+</body>
+</html>
