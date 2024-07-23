@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetTimeout Async</title>
+</head>
+<body>
+    <h1 id="main" style="text-align: center; display: none;">Shirman Narayan Narayan Hari Hari...</h1>
+    <button id="btn" style="display: block;">Stop</button>
+</body>
+<script>
+    //function for changing the display of main heading
+    const showDisplay= function(){
+        document.getElementById('main').style.display='block'
+
+    }
+    const settime = (showDisplay,3000)
+    
+
+    //function for sttoping the set time interval function to execute using button
+    document.getElementById('btn').addEventListener('click', function(){
+        clearTimeout(settime);
+        document.getElementById('main').innerHTML = "Naraya...Narayan..."
+        console.log("Function Stopped");
+    })
+
+    
+</script>
+</html>

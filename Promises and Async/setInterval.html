@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Interval Start and Stop</title>
+</head>
+<body>
+    <h1 id="main">Nind aur Code..!!</h1>
+    <button id="btn1">start</button>
+    <button id="btn2">stop</button>
+</body>
+<script>
+    //function to add paragraph element into the body
+    let forStart;
+    const startAdding = ()=>{
+        forStart = setInterval(()=>{     //here directly defininf 'forStart' variable is not a good practice coz of this might some conflict occure so better define it globally at starting of script
+        const p = document.createElement('p');
+        const text = document.createTextNode("Para Para!");
+        p.appendChild(text);
+        document.body.appendChild(p);
+    },1000);
+    };
+
+    const stopAdding =()=>{
+        clearInterval(forStart);
+    }   
+
+    document.getElementById('btn1').addEventListener('click',startAdding);
+    document.getElementById('btn2').addEventListener('click',stopAdding);
+
+
+</script>
+</html>
