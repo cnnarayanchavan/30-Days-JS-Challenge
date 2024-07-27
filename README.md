@@ -126,4 +126,5 @@ The return value of the 'Function Execution' context is **passed** to the **Glob
 * ES6 Features✅
 * DOM Manipulation✅
 * Events Handeling✅
+* Understood Async Sunctionalities✅
   
