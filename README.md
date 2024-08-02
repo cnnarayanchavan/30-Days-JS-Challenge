@@ -129,4 +129,5 @@ The return value of the 'Function Execution' context is **passed** to the **Glob
 * Understood Async Sunctionalities✅
 * Promises JS✅
 * Arrow Function JS✅
+* Events Handeling Adv✅
   
